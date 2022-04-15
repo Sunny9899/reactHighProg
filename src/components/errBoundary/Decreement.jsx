@@ -7,14 +7,14 @@ export const Decreement = () => {
     throw new Error("Limit Reached");
   }
 
-  function dec() {
-    setNum2((num2) => num2 - 1);
+  var decreement=function(){
+    setNum2(num2 - 1);
   }
 
   return (
     <div>
       <p>{num2}</p>
-      <button onClick={dec}>Click to decrease</button>
+      <button onClick={decreement}>Click to decrease</button>
     </div>
   );
 };

@@ -7,27 +7,15 @@ export const Counter = () => {
     throw new Error("Limit Reached");
   }
 
-  function inc() {
-    setNum((num) => num + 1);
+ var increement =function(){
+    setNum(num + 1);
   }
 
+  
   return (
     <div>
       <p>{num}</p>
-      <button onClick={inc}>Click to increase</button>
+      <button onClick={increement}>Click to increase</button>
     </div>
   );
 };
-
-/*
-export const Hero=({heroName})=>{
-    if(heroName==="Joker"){
-        throw new Error('Not a Hero')
-    }
-    return (
-        <div>
-            {heroName}
-        </div>
-    );
-}
-*/

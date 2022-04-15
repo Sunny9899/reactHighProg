@@ -1,17 +1,17 @@
 import "./App.css";
-import Errbound from "./components/errBoundary/errBoundary";
-import { Counter } from "./components/errBoundary/Counter";
-import { Decreement } from "./components/errBoundary/Decreement";
+import Errboundary from "./components/ErrBoundary/ErrBoundary";
+import { Counter } from "./components/ErrBoundary/Counter";
+import { Decreement } from "./components/ErrBoundary/Decreement";
 
 function App() {
   return (
     <div className="App">
-      <Errbound>
+      <Errboundary>
         <Decreement />
-      </Errbound>
-      <Errbound>
+      </Errboundary>
+      <Errboundary>
         <Counter />
-      </Errbound>
+      </Errboundary>
     </div>
   );
 }
