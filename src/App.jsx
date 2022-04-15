@@ -2,6 +2,7 @@ import "./App.css";
 import Errbound from "./components/errBoundary/errBoundary";
 import { Counter } from "./components/errBoundary/Counter";
 import { Decreement } from "./components/errBoundary/Decreement";
+import {highOrderComponent} from "./components/HOC/HOC";
 
 function App() {
   return (
@@ -12,6 +13,8 @@ function App() {
       <Errbound>
         <Counter />
       </Errbound>
+      <highOrderComponent/>
+      <></>
     </div>
   );
 }
