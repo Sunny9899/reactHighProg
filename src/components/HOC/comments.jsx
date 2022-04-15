@@ -1,8 +1,8 @@
-
+/*
 import HighOrderComponent from "./HOC";
 
  const GetComment=({comp})=>{
- /*
+ 
   const [comment,setComment]=useState([]);
 
   useEffect(()=>{
@@ -20,7 +20,7 @@ let rendercomment= comment.slice(0,10).map((c)=>{
        <p> {c.name}</p>
      </div>)
 })
-*/ 
+ 
 //console.log(comp);
 
 return (comp.map((c)=>{
@@ -34,13 +34,16 @@ COMMENT
 
 }
 
-const Comments=HighOrderComponent(GetComment,"comments");
+export const Comments=HighOrderComponent(GetComment,"comments");
 
 export default Comments;
 
 
-/*
+
     (<div key={c.id}>
       <p> {c.title}</p>
     </div>);
-    */
+    
+
+
+*/    

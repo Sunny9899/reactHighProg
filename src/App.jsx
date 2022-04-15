@@ -16,9 +16,9 @@ function App() {
       </Errbound>
       <hr/>
       <br/>
-      <GetPost/>  
+      {/*<GetPost/>*/}  
       <hr/>
-     <Comments/>
+    {/* <Comments/> */}
     </div>
   );
 }
