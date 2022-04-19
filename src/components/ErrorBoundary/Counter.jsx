@@ -7,7 +7,7 @@ export const Counter = () => {
     throw new Error("Limit Reached");
   }
 
- var increement =function(){
+ var increment =function(){
     setNum(num + 1);
   }
 
@@ -15,7 +15,7 @@ export const Counter = () => {
   return (
     <div>
       <p>{num}</p>
-      <button onClick={increement}>Click to increase</button>
+      <button onClick={increment}>Click to increase</button>
     </div>
   );
 };
